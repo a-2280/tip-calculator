@@ -44,4 +44,4 @@ Users should be able to:
 
 ### What I learned
 
-This was my first time working extensivly with dom manipulation. It was a really good learning experience.
+This was my first time working extensively with DOM manipulation. It was a really good learning experience.
