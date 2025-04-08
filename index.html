@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script defer src="/script.js"></script>
+
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>SPLI<br />TTER</h1>
+      </header>
+      <div class="main-container">
+        <form action="" id="form">
+          <div class="bill-container">
+            <div class="label-container">
+              <label for="bill">Bill</label>
+              <p class="bill-error error hide">Can't be zero</p>
+            </div>
+            <div class="input-container">
+              <img
+                class="input-icon"
+                src="/images/icon-dollar.svg"
+                alt="dollar sign"
+              />
+              <input
+                class="error"
+                type="text"
+                name="bill"
+                id="bill"
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <div class="tip-container">
+            <label for="tip">Select Tip %</label>
+            <div class="buttons">
+              <button id="five-percent">5%</button>
+              <button id="ten-percent">10%</button>
+              <button id="fifteen-percent">15%</button>
+              <button id="twenty-five-percent">25%</button>
+              <button id="fifty-percent">50%</button>
+              <div>
+                <button class="custom-button">Custom</button>
+                <input type="text" name="tip" id="tip" class="hide" />
+              </div>
+            </div>
+          </div>
+          <div class="people-container">
+            <div class="label-container">
+              <label for="people">Number of People</label>
+              <p class="people-error error hide">Can't be zero</p>
+            </div>
+            <div class="input-container">
+              <img
+                class="input-icon"
+                src="/images/icon-person.svg"
+                alt="person icon"
+              />
+              <input
+                class="error"
+                type="text"
+                name="people"
+                id="people"
+                placeholder="0"
+              />
+            </div>
+          </div>
+        </form>
+        <section>
+          <div class="top-section">
+            <div class="tip-amount">
+              <div>
+                <p>Tip Amount</p>
+                <p>/ person</p>
+              </div>
+              <p class="result tip-result">$0.00</p>
+            </div>
+            <div class="total">
+              <div>
+                <p>Total</p>
+                <p>/ person</p>
+              </div>
+              <p class="result total-result">$0.00</p>
+            </div>
+          </div>
+          <button class="reset-button">RESET</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
